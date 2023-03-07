@@ -7,7 +7,6 @@
 //
 //=================================== ESP32 with  L298N motorcontrollermodule =========================
 
-#define idStr "ESP32 Program Station Connected!"
 #define ONBOARD_LED 2
 
 #define RPWM 19                 // to RPWM MotorShield pin 1 & 4
@@ -44,7 +43,7 @@ void setup()
 
   delay(1000);
 
-  Serial.println("PROGRAM_STATION started!");
+  Serial.println("Monitor started!");
 
   pinMode(ONBOARD_LED, OUTPUT);           // For test   Blue Led
   digitalWrite(ONBOARD_LED, LOW);
